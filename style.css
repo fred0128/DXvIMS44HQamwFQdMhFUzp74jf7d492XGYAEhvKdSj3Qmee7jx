@@ -1,0 +1,220 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.event,
+article,
+.adopt {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.welcome-img {
+    max-width: unset;
+    max-width: 300px;
+}
+
+.event h3,
+article h3,
+.adopt h3 {
+    color: #E91E63;
+}
+
+form {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input,
+form textarea {
+    width: 98%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 1px solid #4CAF50;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+form button:hover {
+    background-color: #348938;
+    scale: 1.003;
+    box-shadow: 0 0 10px #1bad20;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#support {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#support img {
+    max-width: 300px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+#support ul {
+    gap: 0px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#support ul li {
+    width: 100%;
+    max-width: 100%;
+    list-style-type: none;
+    padding: 6px 0;
+    margin-top: 10px;
+    background-color: #FFC107;
+}
+
+#support ul li a {
+    background-color: #FFC107;
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 6px 35%;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+    #adopt .adopt {
+        width: 90%;
+        min-width: 300px;
+    }
+}
+
+.adopt-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#adopt .adopt {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    margin-right: 1.5%;
+    vertical-align: top;
+    transition: .2s all ease-in-out;
+    max-width: 300px;
+}
+
+#adopt .adopt:hover {
+    scale: 1.02;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#adopt .adopt img {
+    width: 100%;
+}
+
+#adopt .adopt:last-child {
+    margin-right: 0;
+}
+
+.animals {
+    aspect-ratio: 16/10;
+}
+
+.oth-animals {
+    aspect-ratio: 16/9;
+}
